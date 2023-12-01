@@ -1,7 +1,6 @@
 module.exports = {
     title: 'Panuon 文档',
     description: 'Panuon document',
-    base: '/panuon.github.io/',
     themeConfig: {
         nav: [
             {text: '首页', link: '/'},
