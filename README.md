@@ -9,7 +9,7 @@
 
 ### Panuon.WPF.UI
 
-#### [中文文档](/wpf-ui/zh-cn/index.md)
+#### [中文文档](https://panuon.github.io/wpf-ui/zh-cn/)
 #### 英文文档(待定)
 
 ### Panuon.WPF.Charts(待定)
