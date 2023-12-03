@@ -1,28 +1,9 @@
 # Button 按钮
 
-## 使用方式
+## 前提条件
 
-需要引入资源字典中的样式才能生效。  
-在 `App.xaml` 或 `Resources` 属性中，添加全局资源字典：  
-```xml
-<!--覆盖所有的默认控件样式-->
-<ResourceDictionary Source="pack://application:,,,/Panuon.WPF.UI;component/Control.xaml" />
-<!--仅覆盖Button控件的默认样式-->
-<ResourceDictionary Source="pack://application:,,,/Panuon.WPF.UI;component/Styles/Button.xaml" />
-...
-
-<Button />
-<Style x:Key="MyButtonStyle" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}" />
-```
-如果不需要覆盖所有样式，也可以添加独立资源字典，然后用键名来获取/继承样式：
-```xml
-<!--不会覆盖任何默认样式，必须使用键名-->
-<ResourceDictionary Source="pack://application:,,,/Panuon.WPF.UI;component/Styles/ButtonStyle.xaml" />
-...
-
-<Button Style="{StaticResource {x:Key pu:StyleKeys.ButtonStyle}}" />
-<Style x:Key="MyButtonStyle" TargetType="Button" BasedOn="{StaticResource {x:Key pu:StyleKeys.ButtonStyle}}" />
-```
+该控件是原生控件，必须引用资源字典中的样式才能生效。  
+请参照[约定 -> 引用资源字典中的样式](contract.md#引用资源字典中的样式)部分，将样式引入到你的程序或控件中。  
 
 ## 示例
 
